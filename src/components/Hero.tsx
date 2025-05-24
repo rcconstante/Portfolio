@@ -1,10 +1,7 @@
-
 import { MapPin, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-
 const Hero = () => {
-  return (
-    <section className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-800 flex items-center relative overflow-hidden">
+  return <section className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-800 flex items-center relative overflow-hidden">
       <div className="container mx-auto px-6 py-20 grid lg:grid-cols-2 gap-12 items-center">
         <div className="space-y-8">
           <h1 className="text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-tight">
@@ -51,16 +48,10 @@ const Hero = () => {
         
         <div className="flex justify-center lg:justify-end">
           <div className="relative">
-            <div className="w-80 h-80 lg:w-96 lg:h-96 bg-gradient-to-br from-gray-600 to-gray-800 rounded-full flex items-center justify-center overflow-hidden">
-              <div className="w-64 h-64 lg:w-80 lg:h-80 bg-gradient-to-br from-gray-400 to-gray-600 rounded-full flex items-center justify-center">
-                <div className="text-white text-8xl opacity-80">👼</div>
-              </div>
-            </div>
+            
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
