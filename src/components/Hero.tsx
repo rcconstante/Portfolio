@@ -1,84 +1,62 @@
 
-import { MapPin, X, ArrowDown } from 'lucide-react';
+import { MapPin, ArrowDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Hero = () => {
   return (
     <section className="min-h-screen relative overflow-hidden flex items-center">
-      {/* Spline 3D Background - Fixed blur issue */}
+      {/* Spline 3D Background */}
       <div className="absolute inset-0 z-0">
         <spline-viewer 
           url="https://prod.spline.design/WxYhIytZcUFVj6Qi/scene.splinecode" 
           className="w-full h-full"
           style={{ filter: 'none' }}
         />
-        {/* Reduced overlay opacity for better spline visibility */}
-        <div className="absolute inset-0 bg-black/20"></div>
+        <div className="absolute inset-0 bg-black/40"></div>
       </div>
       
       <div className="container mx-auto px-6 py-20 grid lg:grid-cols-2 gap-12 items-center relative z-10">
         <div className="space-y-8 animate-fade-in-left">
-          <h1 className="text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-tight">
+          {/* Name and Title */}
+          <div className="space-y-2">
+            <h2 className="text-xl font-light text-white/80 tracking-wide">Rich</h2>
+            <p className="text-sm text-white/60 font-light tracking-wider">Product & Visual Designer</p>
+          </div>
+
+          {/* Main Heading */}
+          <h1 className="text-5xl lg:text-6xl xl:text-7xl font-light text-white leading-tight">
             I am a{' '}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 animate-glow">
-              Developer
-            </span>
-            <br />
-            specialising in crafting{' '}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-400 via-purple-400 to-blue-400">
-              digital experiences
-            </span>
-            .
+            <span className="font-medium italic">Developer</span>{' '}
+            specialising<br />
+            in crafting digital<br />
+            <span className="font-medium italic">experiences</span>.
           </h1>
           
-          <p className="text-white/80 text-lg max-w-lg leading-relaxed animate-fade-in-up" style={{
-            animationDelay: '0.2s'
-          }}>
-            Building innovative digital experiences with cutting-edge technology, 
-            creative design, and seamless user interactions.
-          </p>
-          
-          <div className="flex flex-wrap items-center gap-4 animate-fade-in-up" style={{
+          <div className="flex flex-wrap items-center gap-6 pt-8 animate-fade-in-up" style={{
             animationDelay: '0.4s'
           }}>
-            <Button className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white px-8 py-3 rounded-full font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg">
+            <Button className="bg-white text-black hover:bg-white/90 px-8 py-3 rounded-none font-light tracking-wide transition-all duration-300 hover:scale-105">
               View My Work
             </Button>
             
-            <div className="flex items-center space-x-2 text-white/70">
-              <MapPin className="w-5 h-5" />
-              <span>Available Worldwide</span>
+            <div className="flex items-center space-x-2 text-white/60">
+              <MapPin className="w-4 h-4" />
+              <span className="text-sm font-light tracking-wide">Available Worldwide</span>
             </div>
-          </div>
-          
-          <div className="flex items-center space-x-6 pt-4 animate-fade-in-up" style={{
-            animationDelay: '0.6s'
-          }}>
-            <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-white/10 rounded-full flex items-center justify-center backdrop-blur-sm">
-                <span className="text-white text-xs">3+</span>
-              </div>
-              <span className="text-white/70">Years Experience</span>
-            </div>
-            
-            <div className="w-12 h-12 border-2 border-blue-500 rounded-full flex items-center justify-center animate-float">
-              <X className="w-6 h-6 text-blue-500" />
-            </div>
-            
-            <span className="text-white/70">Full-Stack Developer</span>
           </div>
         </div>
         
+        {/* Right side - 3D Element placeholder */}
         <div className="flex justify-center lg:justify-end animate-fade-in-right">
           <div className="relative">
-            
+            {/* This space is for the 3D spline element that's in the background */}
           </div>
         </div>
       </div>
       
       {/* Scroll indicator */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <ArrowDown className="w-6 h-6 text-white/60" />
+        <ArrowDown className="w-5 h-5 text-white/40" />
       </div>
     </section>
   );
