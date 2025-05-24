@@ -71,3 +71,44 @@ Yes, you can!
 To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
 
 Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+
+# Rich.Dev Portfolio
+
+A modern developer portfolio website built with React, Vite, and Tailwind CSS.
+
+## Deployment on Netlify
+
+This project is configured for easy deployment on Netlify.
+
+### Option 1: Deploy via Netlify UI
+
+1. Push your code to a GitHub, GitLab, or Bitbucket repository
+2. Log in to your Netlify account
+3. Click "New site from Git"
+4. Select your repository
+5. Settings should be auto-detected from the netlify.toml file
+6. Click "Deploy site"
+
+### Option 2: Deploy via Netlify CLI
+
+1. Install Netlify CLI: `npm install netlify-cli -g`
+2. Login to Netlify: `netlify login`
+3. Initialize your site: `netlify init`
+4. Deploy your site: `netlify deploy --prod`
+
+## Local Development
+
+1. Install dependencies: `npm install`
+2. Start development server: `npm run dev`
+3. Build for production: `npm run build`
+4. Preview production build: `npm run preview`
+
+## Project Structure
+
+- `/src` - Source code
+  - `/components` - React components
+  - `/hooks` - Custom React hooks
+  - `/pages` - Page components
+  - `/styles` - CSS styles
+- `/public` - Static assets
+- `/dist` - Production build output
