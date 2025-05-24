@@ -1,10 +1,9 @@
-
 import { Button } from '@/components/ui/button';
 import { Mail, Phone, MapPin, Send, Download } from 'lucide-react';
 
 const ContactMe = () => {
   return (
-    <section className="py-20 bg-gradient-to-b from-gray-900 to-black relative overflow-hidden">
+    <section id="contact" className="py-20 bg-black relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute inset-0">
         <div className="absolute top-1/4 left-10 w-96 h-96 bg-gradient-to-br from-blue-500/10 to-purple-500/10 rounded-full blur-3xl animate-float"></div>
@@ -65,9 +64,9 @@ const ContactMe = () => {
             
             <div className="space-y-4">
               {[
-                { icon: Mail, text: "hello@yourportfolio.dev", href: "mailto:hello@yourportfolio.dev" },
-                { icon: Phone, text: "+1 (555) 123-4567", href: "tel:+15551234567" },
-                { icon: MapPin, text: "Available Worldwide", href: "#" }
+                { icon: Mail, text: "r.constante.dev@gmail.com", href: "mailto:r.constante.dev@gmail.com" },
+                { icon: Phone, text: "09150365602", href: "tel:09150365602" },
+                { icon: MapPin, text: "Dasmarinas, Cavite Philippines", href: "#" }
               ].map((contact, index) => (
                 <a
                   key={index}
@@ -84,26 +83,18 @@ const ContactMe = () => {
             </div>
             
             <div className="flex flex-wrap gap-4 pt-6">
-              <Button className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white px-8 py-3 rounded-full transition-all duration-300 hover:scale-105 hover:shadow-lg animate-fade-in-up" style={{animationDelay: '0.6s'}}>
-                <Send className="w-4 h-4 mr-2" />
-                Get In Touch
-              </Button>
-              <Button variant="outline" className="border-white/30 text-white hover:bg-white/10 px-8 py-3 rounded-full backdrop-blur-sm transition-all duration-300 hover:scale-105 animate-fade-in-up" style={{animationDelay: '0.7s'}}>
-                <Download className="w-4 h-4 mr-2" />
-                Download CV
-              </Button>
-            </div>
-            
-            {/* Social proof */}
-            <div className="pt-8 animate-fade-in-up" style={{animationDelay: '0.8s'}}>
-              <p className="text-white/60 text-sm mb-4">Trusted by startups and enterprises</p>
-              <div className="flex space-x-6 opacity-60">
-                {['Microsoft', 'Google', 'Apple', 'Meta'].map((company, index) => (
-                  <span key={index} className="text-white/40 text-sm font-medium">
-                    {company}
-                  </span>
-                ))}
-              </div>
+              <a href="mailto:r.constante.dev@gmail.com">
+                <Button className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white px-8 py-3 rounded-full transition-all duration-300 hover:scale-105 hover:shadow-lg animate-fade-in-up" style={{animationDelay: '0.6s'}}>
+                  <Send className="w-4 h-4 mr-2" />
+                  Get In Touch
+                </Button>
+              </a>
+              <a href="/file/CVV.pdf" download>
+                <Button className="border-2 border-white/50 bg-white/10 text-white hover:bg-white/20 px-8 py-3 rounded-full backdrop-blur-sm transition-all duration-300 hover:scale-105 animate-fade-in-up" style={{animationDelay: '0.7s'}}>
+                  <Download className="w-4 h-4 mr-2" />
+                  Download CV
+                </Button>
+              </a>
             </div>
           </div>
         </div>

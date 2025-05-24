@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="nlp-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#673AB7" />
+      <stop offset="100%" stop-color="#9C27B0" />
+    </linearGradient>
+  </defs>
+  <circle cx="64" cy="64" r="60" fill="url(#nlp-gradient)" />
+  <g fill="#FFFFFF">
+    <path d="M34 40h60v8H34z" />
+    <path d="M34 56h48v8H34z" />
+    <path d="M34 72h36v8H34z" />
+    <path d="M34 88h24v8H34z" />
+    <circle cx="94" cy="60" r="6" />
+    <circle cx="82" cy="76" r="6" />
+    <circle cx="70" cy="92" r="6" />
+    <path d="M94 60l-12 16-12 16" stroke="#FFFFFF" stroke-width="2" fill="none" />
+    <path d="M40 32c0-4.418 3.582-8 8-8h32c4.418 0 8 3.582 8 8v0c0 4.418-3.582 8-8 8H48c-4.418 0-8-3.582-8-8v0z" />
+    <text x="64" y="36" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="#673AB7">NLP</text>
+  </g>
+</svg> 

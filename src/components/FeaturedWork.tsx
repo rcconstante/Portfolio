@@ -1,4 +1,3 @@
-
 import { Star, Eye, Heart, ExternalLink } from 'lucide-react';
 
 const FeaturedWork = () => {
@@ -8,26 +7,29 @@ const FeaturedWork = () => {
       description: "Full-stack marketplace with advanced features",
       image: "photo-1486312338219-ce68d2c6f44d",
       stats: { stars: 8, views: 2, likes: 5 },
-      tech: ["React", "Node.js", "MongoDB"]
+      tech: ["React", "Node.js", "MongoDB"],
+      link: "https://ecommerce-demo.example.com"
     },
     {
       title: "AI Dashboard",
       description: "Machine learning analytics platform",
       image: "photo-1531297484001-80022131f5a1",
       stats: { stars: 8, views: 1, likes: 4 },
-      tech: ["Python", "TensorFlow", "React"]
+      tech: ["Python", "TensorFlow", "React"],
+      link: "https://ai-dashboard.example.com"
     },
     {
       title: "Mobile App",
       description: "Cross-platform social media application",
       image: "photo-1487058792275-0ad4aaf24ca7",
       stats: { stars: 8, views: 9, likes: 6 },
-      tech: ["React Native", "Firebase", "Redux"]
+      tech: ["React Native", "Firebase", "Redux"],
+      link: "https://mobile-app.example.com"
     }
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-b from-gray-900 to-black relative overflow-hidden">
+    <section id="projects" className="py-20 bg-black relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute inset-0">
         <div className="absolute top-1/3 left-10 w-72 h-72 bg-blue-500/5 rounded-full blur-3xl animate-float"></div>
@@ -37,7 +39,7 @@ const FeaturedWork = () => {
       <div className="container mx-auto px-6 relative z-10">
         <div className="flex items-center justify-between mb-16 animate-fade-in-up">
           <div>
-            <h2 className="text-4xl lg:text-5xl font-bold text-white mb-4">Featured Work</h2>
+            <h2 className="text-4xl lg:text-5xl font-bold text-white mb-4">Projects</h2>
             <div className="w-16 h-1 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full"></div>
           </div>
           <div className="flex items-center space-x-2 text-white/50">
@@ -49,7 +51,10 @@ const FeaturedWork = () => {
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
-            <div 
+            <a 
+              href={project.link}
+              target="_blank"
+              rel="noopener noreferrer"
               key={index} 
               className="group cursor-pointer animate-fade-in-up" 
               style={{animationDelay: `${index * 0.2}s`}}
@@ -103,7 +108,7 @@ const FeaturedWork = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </a>
           ))}
         </div>
       </div>

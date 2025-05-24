@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="iot-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0396FF" />
+      <stop offset="100%" stop-color="#0069FF" />
+    </linearGradient>
+  </defs>
+  <circle cx="64" cy="64" r="60" fill="url(#iot-gradient)" />
+  <g fill="#FFFFFF">
+    <!-- Central hub -->
+    <circle cx="64" cy="64" r="12" />
+    
+    <!-- Connected devices -->
+    <circle cx="32" cy="32" r="8" />
+    <circle cx="96" cy="32" r="8" />
+    <circle cx="32" cy="96" r="8" />
+    <circle cx="96" cy="96" r="8" />
+    
+    <!-- Connection lines -->
+    <path d="M40 40l16 16" stroke="#FFFFFF" stroke-width="2" fill="none" />
+    <path d="M88 40l-16 16" stroke="#FFFFFF" stroke-width="2" fill="none" />
+    <path d="M40 88l16-16" stroke="#FFFFFF" stroke-width="2" fill="none" />
+    <path d="M88 88l-16-16" stroke="#FFFFFF" stroke-width="2" fill="none" />
+    
+    <!-- Signal waves -->
+    <path d="M64 40c-13.255 0-24 10.745-24 24s10.745 24 24 24 24-10.745 24-24S77.255 40 64 40z" stroke="#FFFFFF" stroke-width="2" fill="none" />
+    <path d="M64 48c-8.837 0-16 7.163-16 16s7.163 16 16 16 16-7.163 16-16S72.837 48 64 48z" stroke="#FFFFFF" stroke-width="2" fill="none" />
+    
+    <!-- Data points -->
+    <circle cx="32" cy="32" r="2" fill="#FFFFFF" />
+    <circle cx="96" cy="32" r="2" fill="#FFFFFF" />
+    <circle cx="32" cy="96" r="2" fill="#FFFFFF" />
+    <circle cx="96" cy="96" r="2" fill="#FFFFFF" />
+    
+    <!-- Small devices -->
+    <rect x="28" y="24" width="8" height="4" rx="1" />
+    <rect x="92" y="24" width="8" height="4" rx="1" />
+    <rect x="28" y="100" width="8" height="4" rx="1" />
+    <rect x="92" y="100" width="8" height="4" rx="1" />
+  </g>
+</svg> 

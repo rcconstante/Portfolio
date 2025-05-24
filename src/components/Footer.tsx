@@ -1,6 +1,5 @@
-
-import { Search, Github, Twitter } from 'lucide-react';
-import { Input } from '@/components/ui/input';
+import { Github, Twitter, Instagram, Linkedin } from 'lucide-react';
+import { Button } from '@/components/ui/button';
 
 const Footer = () => {
   return (
@@ -10,25 +9,46 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="text-2xl font-bold text-white">Cufcery</h3>
             <p className="text-white/60">
-              Oean etla susist ult,
+              Creating innovative digital experiences
               <br />
-              sed quer ureap.
+              with passion and precision.
             </p>
           </div>
           
           <div className="space-y-4">
-            <div className="relative">
-              <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-white/40" />
-              <Input 
-                placeholder="Search..."
-                className="bg-white/10 border-white/20 text-white placeholder:text-white/40 pl-10 rounded-full"
-              />
+            <h4 className="text-lg font-semibold text-white">Quick Links</h4>
+            <div className="grid grid-cols-2 gap-2">
+              {['Home', 'Projects', 'Skills', 'Experience', 'Contact'].map((link) => (
+                <a 
+                  key={link} 
+                  href={`#${link.toLowerCase()}`} 
+                  className="text-white/60 hover:text-white transition-colors duration-300"
+                >
+                  {link}
+                </a>
+              ))}
             </div>
           </div>
           
-          <div className="flex items-center space-x-4">
-            <Github className="w-6 h-6 text-white/60 hover:text-white cursor-pointer transition-colors" />
-            <Twitter className="w-6 h-6 text-white/60 hover:text-white cursor-pointer transition-colors" />
+          <div className="flex flex-col space-y-4">
+            <h4 className="text-lg font-semibold text-white">Connect</h4>
+            <div className="flex items-center space-x-4">
+              <Button variant="ghost" size="icon" className="rounded-full bg-white/10 hover:bg-white/20 text-white">
+                <Github className="w-5 h-5" />
+              </Button>
+              <Button variant="ghost" size="icon" className="rounded-full bg-white/10 hover:bg-white/20 text-white">
+                <Linkedin className="w-5 h-5" />
+              </Button>
+              <Button variant="ghost" size="icon" className="rounded-full bg-white/10 hover:bg-white/20 text-white">
+                <Twitter className="w-5 h-5" />
+              </Button>
+              <Button variant="ghost" size="icon" className="rounded-full bg-white/10 hover:bg-white/20 text-white">
+                <Instagram className="w-5 h-5" />
+              </Button>
+            </div>
+            <Button className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white rounded-full w-full mt-4">
+              Contact Me
+            </Button>
           </div>
         </div>
         

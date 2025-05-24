@@ -98,4 +98,70 @@
   body {
     @apply bg-background text-foreground;
   }
+  
+  /* Ensure consistent background across all sections */
+  html, body {
+    @apply bg-black;
+    color-scheme: dark;
+  }
+
+  /* Smooth section transitions */
+  section {
+    @apply relative z-10;
+    transition: background-color 0.5s ease;
+  }
+  
+  /* Ensure consistent spacing between sections */
+  section + section {
+    @apply border-t border-white/5;
+  }
+}
+
+/* Custom button styles */
+.btn-gradient {
+  @apply bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white font-medium;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.btn-outline-light {
+  @apply border border-white/30 text-white hover:bg-white/10 backdrop-blur-sm;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Improved button contrast */
+button[variant="outline"], 
+a[variant="outline"],
+.btn-outline {
+  @apply border-2 border-white/50 text-white hover:bg-white/20;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* Section-specific styles */
+section:nth-of-type(odd) {
+  @apply bg-black;
+}
+
+section:nth-of-type(even) {
+  @apply bg-black;
+}
+
+/* Technologies section specific styles */
+section:has(h2:contains('Technologies')) {
+  @apply bg-black;
+}
+
+/* Let's Connect section specific styles */
+section:has(h2:contains("Let's Connect")) {
+  @apply bg-black;
+}
+
+/* Section title alignment */
+section h2.text-4xl,
+section h2.text-5xl {
+  @apply relative inline-block;
+}
+
+/* Consistent section spacing */
+.container {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
 }

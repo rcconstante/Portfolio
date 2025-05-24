@@ -19,7 +19,7 @@ const Profile = () => {
             </div>
             
             <p className="text-white/80 text-xl lg:text-2xl leading-relaxed">
-              With 3 years of coding experience and currently a 3rd-year student, 
+              With 3 years of coding experience and currently a incoming 4th-year student, 
               I specialize in full-stack development, machine learning, and database management.
             </p>
             
@@ -29,7 +29,7 @@ const Profile = () => {
                 <div className="text-white/70 text-sm">Years Coding</div>
               </div>
               <div className="text-center p-4 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 transition-all duration-300 hover:scale-105">
-                <div className="text-2xl font-bold text-purple-400 mb-2">50+</div>
+                <div className="text-2xl font-bold text-purple-400 mb-2">14+</div>
                 <div className="text-white/70 text-sm">Projects</div>
               </div>
               <div className="text-center p-4 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 transition-all duration-300 hover:scale-105">
@@ -44,7 +44,7 @@ const Profile = () => {
               <div className="w-full max-w-md aspect-[4/5] bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 rounded-2xl p-1 animate-glow">
                 <div className="w-full h-full bg-gray-900 rounded-2xl overflow-hidden">
                   <img 
-                    src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7"
+                    src="/images/Rich.png"
                     alt="Profile"
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
