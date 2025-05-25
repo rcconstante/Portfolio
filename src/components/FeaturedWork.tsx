@@ -4,7 +4,7 @@ const FeaturedWork = () => {
   const projects = [
     {
       title: "SmartWater",
-      description: "Web Application designed to optimize rainwater and fog collection in Bacoor, Cavite.",
+      description: "Web Application designed to optimize rainwater and fog collection in Bacoor Cavite.",
       image: "SmartWater.png",
       stats: { stars: 8, views: 98, likes: 5 },
       tech: ["Python", "SQL", "HTML","JavaScript","CSS","External API","Machine Learning"],
