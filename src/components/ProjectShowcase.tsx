@@ -134,14 +134,14 @@ const ProjectShowcase = () => {
                 animate={{ y: [0, -10, 0] }}
                 transition={{ repeat: Infinity, duration: 3, ease: "easeInOut" }}
               >
-                <span className="text-white text-xs font-bold">JS</span>
+                <span className="text-white text-xs font-bold">React</span>
               </motion.div>
               <motion.div 
                 className="absolute -bottom-6 -left-6 w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-500 rounded-xl flex items-center justify-center shadow-lg"
                 animate={{ y: [0, 10, 0] }}
                 transition={{ repeat: Infinity, duration: 4, ease: "easeInOut", delay: 1 }}
               >
-                <span className="text-white text-xs font-bold">AI</span>
+                <span className="text-white text-xs font-bold">Tailwind</span>
               </motion.div>
             </div>
           </motion.div>

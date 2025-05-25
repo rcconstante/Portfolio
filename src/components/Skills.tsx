@@ -44,13 +44,13 @@ const Skills = () => {
     },
     {
       name: "Flask",
-      icon: "/icons/flask.svg",
-      color: "from-gray-600 to-gray-800"
+      icon: "/icons/flask.png",
+      color: "from-blue-600 to-green-800"
     },
     {
       name: "Tailwind CSS",
       icon: "/icons/tailwind.svg",
-      color: "from-cyan-400 to-blue-500"
+      color: "from-cyan-800 to-blue-500"
     },
     {
       name: "Vite",
@@ -59,7 +59,7 @@ const Skills = () => {
     },
     {
       name: "Arduino",
-      icon: "/icons/arduino.svg",
+      icon: "/icons/Arduino.jpg",
       color: "from-teal-500 to-cyan-500"
     },
     {
@@ -84,9 +84,20 @@ const Skills = () => {
     },
     {
       name: "Access",
-      icon: "/icons/access.svg",
+      icon: "/icons/access.png",
       color: "from-red-600 to-red-800"
+    },
+        {
+      name: "TypeScript",
+      icon: "/icons/Typescript.png",
+      color: "from-blue-500 to-blue-700"
+    },
+        {
+      name: "Expo",
+      icon: "/icons/expo.png",
+      color: "from-red-100 to-red-100"
     }
+
   ];
 
   // Create a placeholder icon component for when the SVG might not be available

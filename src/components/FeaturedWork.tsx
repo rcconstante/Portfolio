@@ -3,28 +3,52 @@ import { Star, Eye, Heart, ExternalLink } from 'lucide-react';
 const FeaturedWork = () => {
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "Full-stack marketplace with advanced features",
-      image: "photo-1486312338219-ce68d2c6f44d",
-      stats: { stars: 8, views: 2, likes: 5 },
-      tech: ["React", "Node.js", "MongoDB"],
-      link: "https://ecommerce-demo.example.com"
+      title: "SmartWater",
+      description: "Web Application designed to optimize rainwater and fog collection in Bacoor, Cavite.",
+      image: "SmartWater.png",
+      stats: { stars: 8, views: 98, likes: 5 },
+      tech: ["Python", "SQL", "HTML","JavaScript","CSS","External API","Machine Learning"],
+      link: "https://github.com/fame2332/SmartWaterApp"
     },
     {
-      title: "AI Dashboard",
-      description: "Machine learning analytics platform",
-      image: "photo-1531297484001-80022131f5a1",
-      stats: { stars: 8, views: 1, likes: 4 },
-      tech: ["Python", "TensorFlow", "React"],
-      link: "https://ai-dashboard.example.com"
+      title: "Text Safe",
+      description: "Web Application designed to detect text Spam using NLP",
+      image: "TestSafe.png",
+      stats: { stars: 8, views: 35, likes: 4 },
+      tech: ["Python", "HTML", "CSS","JavaScript","Natural Language Processing","SQL"],
+      link: "https://github.com/fame2332/TextSafe"
     },
     {
-      title: "Mobile App",
-      description: "Cross-platform social media application",
-      image: "photo-1487058792275-0ad4aaf24ca7",
-      stats: { stars: 8, views: 9, likes: 6 },
-      tech: ["React Native", "Firebase", "Redux"],
-      link: "https://mobile-app.example.com"
+      title: "Study Space Mobile App",
+      description: "Mobile application designed to help students find optimal study environments on campus.",
+      image: "StudySpace.png",
+      stats: { stars: 8, views: 11, likes: 6 },
+      tech: ["React Native", "Expo","Machine Learning"],
+      link: "https://github.com/fame2332/StudySpaceThesis"
+    },
+    {
+      title: "Neon Blitz",
+      description: "3D First person shooting game",
+      image: "NeonBlitz.png",
+      stats: { stars: 8, views: 211, likes: 2 },
+      tech: ["Three.js", "HTML","CSS","JavaScript"],
+      link: "https://neonblitz.netlify.app/"
+    },    
+    {
+      title: "Realtime Object Color Detection",
+      description: "Application designed to detect realtime object color with the use of YOLO and OpenCV",
+      image: "CompVP.png",
+      stats: { stars: 8, views: 12, likes: 6 },
+      tech: ["Python", "OpenCV","YOLO"],
+      link: "https://github.com/fame2332/ComputerVisionSummative"
+    },
+    {
+      title: "RacerPH Website",
+      description: "Website designed for MU Dark Epoch Guild",
+      image: "RacerPH.png",
+      stats: { stars: 1, views: 1, likes: 1 },
+      tech: ["Vite", "React","Tailwind"],
+      link: "https://racerph.netlify.app/"
     }
   ];
 
@@ -62,7 +86,7 @@ const FeaturedWork = () => {
               <div className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-sm rounded-2xl p-6 border border-white/10 hover:border-white/20 transition-all duration-500 hover:scale-105 hover:shadow-2xl">
                 <div className="aspect-video bg-gray-700 rounded-xl overflow-hidden mb-6 relative">
                   <img 
-                    src={`https://images.unsplash.com/${project.image}`}
+                    src={`/images/${project.image}`}
                     alt={project.title}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                   />

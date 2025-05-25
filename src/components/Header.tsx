@@ -15,7 +15,7 @@ const Header = () => {
           <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center">
             <span className="text-black font-bold text-sm">R</span>
           </div>
-          <span className="text-white font-bold text-xl">Rich.Dev</span>
+          <span className="text-white font-bold text-xl">R.constante</span>
         </div>
         
         <nav className="hidden md:flex items-center space-x-8">
@@ -38,7 +38,7 @@ const Header = () => {
             onClick={(e) => { e.preventDefault(); scrollToSection('skills'); }}
             className="text-white/70 hover:text-white transition-colors"
           >
-            Technologies
+            Skills
           </a>
           <a 
             href="#contact" 
@@ -50,11 +50,11 @@ const Header = () => {
         </nav>
         
         <div className="flex items-center space-x-4">
-          <Facebook className="w-5 h-5 text-white/70 hover:text-white cursor-pointer transition-colors" />
-          <MessageSquare className="w-5 h-5 text-white/70 hover:text-white cursor-pointer transition-colors" />
+          
+          
           <div className="flex items-center space-x-2">
-            <User className="w-5 h-5 text-white/70" />
-            <span className="text-white/70 text-sm">19/20</span>
+    
+            <span className="text-white/70 text-sm"></span>
           </div>
         </div>
       </div>

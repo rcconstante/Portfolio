@@ -1,7 +1,7 @@
 
 const About = () => {
   return (
-    <section className="py-20 bg-gradient-to-b from-black to-gray-900 relative overflow-hidden">
+    <section id="about" className="py-20 bg-gradient-to-b from-black to-gray-900 relative overflow-hidden">
       {/* Animated background grid */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute inset-0" style={{

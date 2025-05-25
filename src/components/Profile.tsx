@@ -19,7 +19,8 @@ const Profile = () => {
             </div>
             
             <p className="text-white/80 text-xl lg:text-2xl leading-relaxed">
-              With 3 years of coding experience and currently a incoming 4th-year student, 
+              With three years of coding experience and currently entering my fourth year 
+              as a Computer Science student at De La Salle University – Dasmariñas, 
               I specialize in full-stack development, machine learning, and database management.
             </p>
             
@@ -56,7 +57,7 @@ const Profile = () => {
                 <span className="text-white text-sm font-bold">ML</span>
               </div>
               <div className="absolute -bottom-4 -left-4 w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full flex items-center justify-center animate-float" style={{animationDelay: '1s'}}>
-                <span className="text-white text-sm font-bold">FS</span>
+                <span className="text-white text-sm font-bold">CV</span>
               </div>
             </div>
           </div>

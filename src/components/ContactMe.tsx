@@ -89,7 +89,7 @@ const ContactMe = () => {
                   Get In Touch
                 </Button>
               </a>
-              <a href="/file/CVV.pdf" download>
+              <a href="/file/RichmondC.pdf" download="R.Constante_CV.pdf" target="_blank" rel="noopener noreferrer">
                 <Button className="border-2 border-white/50 bg-white/10 text-white hover:bg-white/20 px-8 py-3 rounded-full backdrop-blur-sm transition-all duration-300 hover:scale-105 animate-fade-in-up" style={{animationDelay: '0.7s'}}>
                   <Download className="w-4 h-4 mr-2" />
                   Download CV
