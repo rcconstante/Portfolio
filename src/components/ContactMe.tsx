@@ -66,7 +66,7 @@ const ContactMe = () => {
               {[
                 { icon: Mail, text: "r.constante.dev@gmail.com", href: "mailto:r.constante.dev@gmail.com" },
                 { icon: Phone, text: "09150365602", href: "tel:09150365602" },
-                { icon: MapPin, text: "Dasmariñas Cavite Philippines", href: "https://en.wikipedia.org/wiki/Dasmari%C3%B1as" }
+                { icon: MapPin, text: "Dasmariñas, Cavite, Philippines", href: "https://en.wikipedia.org/wiki/Dasmari%C3%B1as" }
               ].map((contact, index) => (
                 <a
                   key={index}
